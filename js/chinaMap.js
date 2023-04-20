@@ -30,7 +30,10 @@ var data=[
         {date: 2000, name: '甘肃', value: 6.46},
         {date: 2000, name: '青海', value: 27.71},
         {date: 2000, name: '宁夏', value: 22.8},
-        {date: 2000, name: '新疆', value: 20.14}],
+        {date: 2000, name: '新疆', value: 20.14},
+        {date: 2000, name: '台湾', value: null,tooltip:{formatter:'青少年生育率<br/>台湾:暂无数据'}},
+        {date: 2000, name: '香港', value: null,tooltip:{formatter:'青少年生育率<br/>香港:暂无数据'}},
+        {date: 2000, name: '澳门', value: null,tooltip:{formatter:'青少年生育率<br/>澳门:暂无数据'}}],
     [{date: 2010, name: '北京', value: 1.06},
         {date: 2010, name: '天津', value: 3.78},
         {date: 2010, name: '河北', value: 2.43},
@@ -61,7 +64,10 @@ var data=[
         {date: 2010, name: '甘肃', value: 5.46},
         {date: 2010, name: '青海', value: 16.34},
         {date: 2010, name: '宁夏', value: 14.25},
-        {date: 2010, name: '新疆', value: 12.16}],
+        {date: 2010, name: '新疆', value: 12.16},
+        {date: 2010, name: '台湾', value: null,tooltip:{formatter:'青少年生育率<br/>台湾:暂无数据'}},
+        {date: 2010, name: '香港', value: null,tooltip:{formatter:'青少年生育率<br/>香港:暂无数据'}},
+        {date: 2010, name: '澳门', value: null,tooltip:{formatter:'青少年生育率<br/>澳门:暂无数据'}}],
     [ {date: 2020, name: '北京', value: 0.96},
         {date: 2020, name: '天津', value: 1.4},
         {date: 2020, name: '河北', value: 4.3},
@@ -92,7 +98,10 @@ var data=[
         {date: 2020, name: '甘肃', value: 11.14},
         {date: 2020, name: '青海', value: 20.86},
         {date: 2020, name: '宁夏', value: 15.4},
-        {date: 2020, name: '新疆', value: 3.21}]
+        {date: 2020, name: '新疆', value: 3.21},
+        {date: 2020, name: '台湾', value: null,tooltip:{formatter:'青少年生育率<br/>台湾:暂无数据'}},
+        {date: 2020, name: '香港', value: null,tooltip:{formatter:'青少年生育率<br/>香港:暂无数据'}},
+        {date: 2020, name: '澳门', value: null,tooltip:{formatter:'青少年生育率<br/>澳门:暂无数据'}}]
 ]
 var option={
     timeline:{
@@ -124,6 +133,16 @@ var option={
         },
     },
     baseOption: {
+        title:{
+            text: '*注：港澳台暂无数据',
+            textStyle: {
+                color:'#e2c9c2',
+                fontSize:16,
+                fontStyle:'italic',
+                fontWeight:'normal'
+            },
+            top:'3%'
+        },
         backgroundColor:'#00102a',
         visualMap: {
             max: 28,
@@ -170,7 +189,7 @@ var option={
     options:[
         {
             series: {
-                data:data[0],
+                data:data[0]
             },
         },
         {

@@ -2,7 +2,7 @@ var myChart=echarts.init(document.getElementById("chart2"))
 var option;
 option = {
     title:{
-        text:'图7 15-19岁各教育程度女性生育比例',
+        text:'图6 15-19岁各教育程度女性生育比例',
         textStyle: {
             color:'#fff',
             fontSize:24

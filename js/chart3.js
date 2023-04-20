@@ -2,7 +2,7 @@ var mychart=echarts.init(document.getElementById("chart3"))
 var option;
 option = {
     title:{
-        text:'图6 1998-2020全国城镇乡6岁及以上教育程度小学及以下人口比例',
+        text:'图5 1998-2020全国城镇乡6岁及以上教育程度小学及以下人口比例',
         textStyle: {
             color:'#fff',
             fontSize:24

@@ -35,7 +35,7 @@ var mychart=echarts.init(document.getElementById("chart5"))
 var option;
 option={
     title:{
-        text:'图9 2020年全国各地区15岁以上教育程度小学及以下人口比例与15-19岁育龄妇女生育率散点图',
+        text:'图8 2020年全国各地区15岁以上教育程度小学及以下人口比例与15-19岁育龄妇女生育率散点图',
         textStyle: {
             color:'#fff',
             fontSize:24

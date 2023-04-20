@@ -1,7 +1,7 @@
 var myChart = echarts.init(document.getElementById('main'));
 var option = {
     title:{
-        text:'图4 1998-2020年中国青春期生育率',
+        text:'图2 1998-2020年中国青春期生育率',
         textStyle: {
             color:'#fff',
             fontSize:24

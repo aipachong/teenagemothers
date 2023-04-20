@@ -1,7 +1,7 @@
     var myChart = echarts.init(document.getElementById('2'));
     var option = {
     title:{
-        text:'图10 2010年城市流动人口按年龄分女性比例',
+        text:'图9 2010年城市流动人口按年龄分女性比例',
         textStyle: {
             color:'#FFF',
             fontSize:24

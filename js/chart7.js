@@ -1,7 +1,7 @@
 var myChart = echarts.init(document.getElementById('fifth'));
 option = {
     title: {
-        text: '图11 广东省分年龄组未成年流动人口性别比例',
+        text: '图10 广东省分年龄组未成年流动人口性别比例',
         left: 0,
         top: 0,
         textStyle: {

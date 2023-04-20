@@ -1,7 +1,7 @@
     var myChart=echarts.init(document.getElementById("chart1"))
     var option = {
     title:{
-        text:'图5 1998-2020全国6岁及以上分性别教育程度小学及以下人口比例',
+        text:'图4 1998-2020全国6岁及以上分性别教育程度小学及以下人口比例',
         textStyle: {
             color:'#fff',
             fontSize:24
